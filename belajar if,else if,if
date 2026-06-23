@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main() {
+	int nilai;
+	std::cout << "Masukan nilai anda : ";
+	std::cin >> nilai;
+	if (nilai <= 60 ) {
+		std::cout << "Nilai anda D";
+	} else if (nilai <= 79 ) {
+		std::cout << "Nilai anda C";
+	} else if (nilai <= 90 ) {
+		std::cout << "Nilai anda B";
+	} else if (nilai <= 100 ) {
+		std::cout << "Nilai anda A";
+	} else {
+		std::cout << "Nilai invalid";
+	}
+	
+	return 0;
+}
