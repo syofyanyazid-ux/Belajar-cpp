@@ -1,0 +1,11 @@
+#include <iostream>
+
+int main() {
+	std :: cout << "============================================================" << std :: endl;
+	std :: cout << "Nama : Roga" << std :: endl;
+	std :: cout << "Umur : 19 tahun" << std :: endl;
+	std :: cout << "Hobi : main gitar dan belajar coding" << std :: endl;
+	std :: cout << "============================================================";
+	
+	return 0;
+}
