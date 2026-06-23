@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+
+int main() {
+	
+	std::string nama;
+	int umur;
+	double tinggi_badan;
+	char jenis_kelamin;
+	std::cout << "Masukkan data anda" << std::endl;
+	std::cout << "Nama\t\t: ";
+	std::getline(std::cin , nama);
+	std::cout << "Umur\t\t: ";
+	std::cin >> umur;
+	std::cout << "Tinggi badan\t: ";
+	std::cin >> tinggi_badan;
+	std::cout << "Jenis kelamin\t: ";
+	std::cin >> jenis_kelamin;
+	std::cout << std::endl << std::endl << std::endl;
+	
+	std::cout << "================ DATA DIRI ================" << std::endl;
+	std::cout << "Nama\t\t: " << nama << std::endl;
+	std::cout << "Umur\t\t: " << umur << std::endl;
+	std::cout << "Tinggi badan\t: " << tinggi_badan << std::endl;
+	std::cout << "Jenis kelamin\t: " << jenis_kelamin << std::endl;
+	std::cout << "===========================================" << std::endl;
+	
+	
+	return 0;
+}
+
