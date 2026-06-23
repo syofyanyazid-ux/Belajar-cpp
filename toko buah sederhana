@@ -1,0 +1,97 @@
+#include <iostream>
+
+int main() {
+	std::string buah;
+	double apel, pisang, jeruk, mangga;
+	apel = 8000;
+	pisang = 3000;
+	jeruk = 5000;
+	mangga = 9000;
+	
+	double harga;
+	double harga_total_setelah_diskon;
+	double jumlah;
+	double diskon1, diskon2, diskon3;
+	diskon1 = 0.95;
+	diskon2 = 0.90;
+	diskon3 = 0.80;
+	
+	
+	std::cout << "\t\t\tMenu Buah";
+	std::cout << std::endl;
+	std::cout
+	<< "Apel\t: Rp 8.000.00\n"
+	<< "Pisang\t: Rp 3.000.00\n"
+	<< "Jeruk\t: Rp 5.000.00\n"
+	<< "Mangga\t: Rp 9.000.00\n";
+	std::cout << std::endl;
+	std::cout << "Halo, mau anda beli apa?\n";
+	std::cout << "ketik buah dengan huruf kecil : ";
+	std::cin >> buah;
+	
+	if (buah == "apel") {
+		std::cout << "mau berapa?\t:";
+		std::cin >> jumlah;
+		harga = apel * jumlah;
+		std::cout << "Harganya : " << harga << std::endl;
+		if (harga >= 200000) {
+			harga_total_setelah_diskon = harga * diskon3;
+			std::cout << "selamat anda dapet diskon 20%\nharga total setelah diskon yaitu : " << harga_total_setelah_diskon << "\nterimkasih sudah belanja\n";
+		} else if(harga >= 100000) {
+			harga_total_setelah_diskon = harga * diskon2;
+			std::cout << "selamat anda dapet diskon 10%\nharga total setelah diskon yaitu : " << harga_total_setelah_diskon << "\nterimkasih sudah belanja\n";
+		} else if(harga >= 50000) {
+			harga_total_setelah_diskon = harga * diskon1;
+			std::cout << "selamat anda dapet diskon 5%\nharga total setelah diskon yaitu : " << harga_total_setelah_diskon << "\nterimkasih sudah belanja\n";
+		}
+	} else if (buah == "jeruk") {
+		std::cout << "mau berapa?\t:";
+		std::cin >> jumlah;
+		harga = jeruk * jumlah;
+		std::cout << "Harganya : " << harga << std::endl;
+		if (harga >= 200000) {
+			harga_total_setelah_diskon = harga * diskon3;
+			std::cout << "selamat anda dapet diskon 20%\nharga total setelah diskon yaitu : " << harga_total_setelah_diskon << "\nterimkasih sudah belanja\n";
+		} else if(harga >= 100000) {
+			harga_total_setelah_diskon = harga * diskon2;
+			std::cout << "selamat anda dapet diskon 10%\nharga total setelah diskon yaitu : " << harga_total_setelah_diskon << "\nterimkasih sudah belanja\n";
+		} else if(harga >= 50000) {
+			harga_total_setelah_diskon = harga * diskon1;
+			std::cout << "selamat anda dapet diskon 5%\nharga total setelah diskon yaitu : " << harga_total_setelah_diskon << "\nterimkasih sudah belanja\n";
+		}
+	} else if (buah == "pisang") {
+		std::cout << "mau berapa?\t:";
+		std::cin >> jumlah;
+		harga = pisang * jumlah;
+		std::cout << "Harganya : " << harga << std::endl;
+		if (harga >= 200000) {
+			harga_total_setelah_diskon = harga * diskon3;
+			std::cout << "selamat anda dapet diskon 20%\nharga total setelah diskon yaitu : " << harga_total_setelah_diskon << "\nterimkasih sudah belanja\n";
+		} else if(harga >= 100000) {
+			harga_total_setelah_diskon = harga * diskon2;
+			std::cout << "selamat anda dapet diskon 10%\nharga total setelah diskon yaitu : " << harga_total_setelah_diskon << "\nterimkasih sudah belanja\n";
+		} else if(harga >= 50000) {
+			harga_total_setelah_diskon = harga * diskon1;
+			std::cout << "selamat anda dapet diskon 5%\nharga total setelah diskon yaitu : " << harga_total_setelah_diskon << "\nterimkasih sudah belanja\n";
+		}
+	} else if (buah == "mangga") {
+		std::cout << "mau berapa?\t:";
+		std::cin >> jumlah;
+		harga = mangga * jumlah;
+		std::cout << "Harganya : " << harga << std::endl;
+		if (harga >= 200000) {
+			harga_total_setelah_diskon = harga * diskon3;
+			std::cout << "selamat anda dapet diskon 20%\nharga total setelah diskon yaitu : " << harga_total_setelah_diskon << "\nterimkasih sudah belanja\n";
+		} else if(harga >= 100000) {
+			harga_total_setelah_diskon = harga * diskon2;
+			std::cout << "selamat anda dapet diskon 10%\nharga total setelah diskon yaitu : " << harga_total_setelah_diskon << "\nterimkasih sudah belanja\n";
+		} else if(harga >= 50000) {
+			harga_total_setelah_diskon = harga * diskon1;
+			std::cout << "selamat anda dapet diskon 5%\nharga total setelah diskon yaitu : " << harga_total_setelah_diskon << "\nterimkasih sudah belanja\n";
+		}
+	} else {
+		std::cout << "maaf buah yang anda cari tidak ada di menu!" << std::endl;
+	}
+		
+	return 0;
+}
